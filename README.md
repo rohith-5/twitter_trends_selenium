@@ -23,7 +23,12 @@ A Flask web app that scrapes Twitter's trending topics using Selenium WebDriver,
    git clone https://github.com/rohith-5/twitter_trends_selenium.git
    cd twitter_trends_selenium
 
-2. Set up the .env file: Create a .env file in the root directory and add your Twitter credentials and MongoDB URI:
+2. Install dependencies:
+
+         pip install -r requirements.txt
+
+
+3. Set up the .env file: Create a .env file in the root directory and add your Twitter credentials and MongoDB URI:
 
     TWITTER_USERNAME=your_username
     TWITTER_PASSWORD=your_password
