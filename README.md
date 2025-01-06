@@ -31,8 +31,11 @@ A Flask web app that scrapes Twitter's trending topics using Selenium WebDriver,
 3. Set up the .env file: Create a .env file in the root directory and add your Twitter credentials and MongoDB URI:
 
     TWITTER_USERNAME=your_username
+   
     TWITTER_PASSWORD=your_password
-    MONGO_URI=your_mongo_uri
+   
+    MONGO_URI=your_mongo_url
+   
     PROXY=your_proxy 
 
 
