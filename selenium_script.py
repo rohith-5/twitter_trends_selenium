@@ -41,8 +41,7 @@ def initialize_driver():
     global driver
     if driver is None:
         chrome_options = Options()
-        #if PROXY:
-        #    chrome_options.add_argument(f"--proxy-server={PROXY}")
+        #chrome_options.add_argument(f"--proxy-server={PROXY}")
         chrome_options.add_argument("--start-maximized")
         chrome_options.add_argument("--headless")
         chrome_options.add_argument('--disable-gpu')
@@ -290,4 +289,5 @@ def shutdown_handler(signal, frame):
 if __name__ == "__main__":
     signal.signal(signal.SIGINT, shutdown_handler)
     print("Starting Flask server...")
-    app.run(debug=True, port=8080)
+    app.run(debug=True, host="0.0.0.0", port=8080)
+
